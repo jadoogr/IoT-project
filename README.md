@@ -1,3 +1,3 @@
 # IoT-project
 
-This Project is based upon NodeMCU ESP8266 Development Board. This was made as a part of the Summer Training at DuPont in the summers of 2017. The  Board reads data using DHT22 sensor.
+This Project is based upon NodeMCU ESP8266 Development Board. This was made as a part of the Summer Training at DuPont in the summers of 2017. The  Board reads data using DHT22 sensor. Then the temperature and Humidity data read using the sensor is sent to the MQTT server(cloudMQTT in this case), which further publishes the data to the topic. As our NodeMCU board is both publisher and subscriber to the topic, it recieves the data, which this time it pushes to ThingSpeak. Here the data is shown in the form of graphs of the quantity varying with time.
